@@ -1,0 +1,21 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: white;
+}
+
+h1 {
+  color: darkblue;
+}
+
+h2 {
+  color: darkblue;
+}
+
+p{
+  color: darkslategrey;
+}
+
+a {
+  color: #00B7FF;
+}
