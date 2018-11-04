@@ -7,13 +7,15 @@
 var app = require('../app');
 var debug = require('debug')('flex:server');
 var https = require('https');
-
 var fs = require('fs');
 
+//Enviromental variables
+var NODE_KEY_DIR = process.env.NODE_KEY_DIR;
+
 var options = {
-  key: fs.readFileSync('./keys/privkey.pem'),
-  cert: fs.readFileSync('./keys/fullchain.pem'),
-  ca: fs.readFileSync('./keys/chain.pem')
+  key: fs.readFileSync(NODE_KEY_DIR + '/privkey.pem'),
+  cert: fs.readFileSync(NODE_KEY_DIR + '/fullchain.pem'),
+  ca: fs.readFileSync(NODE_KEY_DIR + '/chain.pem')
 }
 
 /**
