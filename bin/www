@@ -10,7 +10,7 @@ var https = require('https');
 var fs = require('fs');
 
 //Enviromental variables
-var NODE_KEY_DIR = process.env.PATH;
+var NODE_KEY_DIR = process.env.NODE_KEY_DIR || '/home/ubuntu/apps/flex/keys';
 console.log('NODE KEY IS : ' + NODE_KEY_DIR);
 var options = {
   key: fs.readFileSync(NODE_KEY_DIR + '/privkey.pem'),
