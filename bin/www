@@ -11,7 +11,7 @@ var fs = require('fs');
 
 //Enviromental variables
 var NODE_KEY_DIR = process.env.NODE_KEY_DIR;
-
+console.log('NODE KEY IS : ' + NODE_KEY_DIR);
 var options = {
   key: fs.readFileSync(NODE_KEY_DIR + '/privkey.pem'),
   cert: fs.readFileSync(NODE_KEY_DIR + '/fullchain.pem'),
