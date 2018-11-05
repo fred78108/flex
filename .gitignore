@@ -2,3 +2,4 @@ node_modules
 ignore keys
 keys
 package-lock.json.gitignore
+package-lock.json
